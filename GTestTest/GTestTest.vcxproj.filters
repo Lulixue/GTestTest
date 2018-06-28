@@ -54,9 +54,6 @@
     <ClCompile Include="D:\VisualStudio\googletest\googletest\samples\sample8_unittest.cc">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="D:\VisualStudio\googletest\googletest\samples\sample9_unittest.cc">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="D:\VisualStudio\googletest\googletest\src\gtest.cc">
       <Filter>源文件\src</Filter>
     </ClCompile>

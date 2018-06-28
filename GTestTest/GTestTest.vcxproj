@@ -71,8 +71,6 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LibraryPath>D:\VisualStudio\googletest\googletest\msvc\2010\gtest\Win32-Debug;$(LibraryPath)</LibraryPath>
-    <SourcePath>D:\VisualStudio\googletest\googletest\src;$(SourcePath)</SourcePath>
-    <IncludePath>D:\VisualStudio\googletest\googletest\src;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -125,17 +123,32 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="D:\VisualStudio\googletest\googletest\samples\sample1.cc" />
-    <ClCompile Include="D:\VisualStudio\googletest\googletest\samples\sample1_unittest.cc" />
+    <ClCompile Include="D:\VisualStudio\googletest\googletest\samples\sample1_unittest.cc">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="D:\VisualStudio\googletest\googletest\samples\sample2.cc" />
-    <ClCompile Include="D:\VisualStudio\googletest\googletest\samples\sample2_unittest.cc" />
-    <ClCompile Include="D:\VisualStudio\googletest\googletest\samples\sample3_unittest.cc" />
+    <ClCompile Include="D:\VisualStudio\googletest\googletest\samples\sample2_unittest.cc">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="D:\VisualStudio\googletest\googletest\samples\sample3_unittest.cc">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="D:\VisualStudio\googletest\googletest\samples\sample4.cc" />
-    <ClCompile Include="D:\VisualStudio\googletest\googletest\samples\sample4_unittest.cc" />
-    <ClCompile Include="D:\VisualStudio\googletest\googletest\samples\sample5_unittest.cc" />
-    <ClCompile Include="D:\VisualStudio\googletest\googletest\samples\sample6_unittest.cc" />
-    <ClCompile Include="D:\VisualStudio\googletest\googletest\samples\sample7_unittest.cc" />
-    <ClCompile Include="D:\VisualStudio\googletest\googletest\samples\sample8_unittest.cc" />
-    <ClCompile Include="D:\VisualStudio\googletest\googletest\samples\sample9_unittest.cc" />
+    <ClCompile Include="D:\VisualStudio\googletest\googletest\samples\sample4_unittest.cc">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="D:\VisualStudio\googletest\googletest\samples\sample5_unittest.cc">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="D:\VisualStudio\googletest\googletest\samples\sample6_unittest.cc">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="D:\VisualStudio\googletest\googletest\samples\sample7_unittest.cc">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="D:\VisualStudio\googletest\googletest\samples\sample8_unittest.cc">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="D:\VisualStudio\googletest\googletest\src\gtest-death-test.cc" />
     <ClCompile Include="D:\VisualStudio\googletest\googletest\src\gtest-filepath.cc" />
     <ClCompile Include="D:\VisualStudio\googletest\googletest\src\gtest-port.cc" />
